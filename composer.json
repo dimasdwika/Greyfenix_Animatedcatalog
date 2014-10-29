@@ -1,0 +1,15 @@
+{
+    "name": "greyfenix/animatedcatalog",
+    "license": "MIT",
+    "type": "magento-module",
+    "description": "Catalog product animation for Magento module",
+    "homepage": "https://github.com/dimasdwika/Greyfenix_Animatedcatalog",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Dimas Putra"
+        }
+    ]
+}
