@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Greyfenix_Animatedcatalog>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends></depends>
+        </Greyfenix_Animatedcatalog>
+    </modules>
+</config>

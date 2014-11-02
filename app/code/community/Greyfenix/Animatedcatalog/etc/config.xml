@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Greyfenix_Animatedcatalog>
+            <version>1.0.0</version>
+        </Greyfenix_Animatedcatalog>
+    </modules>
+    <global>
+        <models>
+            <greyfenix_animatedcatalog>
+                <class>Greyfenix_Animatedcatalog_Model</class>
+            </greyfenix_animatedcatalog>
+        </models>
+        <resources>
+            <greyfenix_animatedcatalog_setup>
+                <setup>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                    <module>Greyfenix_Animatedcatalog</module>
+                </setup>
+            </greyfenix_animatedcatalog_setup>
+        </resources>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <greyfenix_animatedcatalog>
+                    <file>greyfenix/animatedcatalog.xml</file>
+                </greyfenix_animatedcatalog>
+            </updates>
+        </layout>
+    </frontend>
+</config>
