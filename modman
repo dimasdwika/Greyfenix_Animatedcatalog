@@ -1,13 +1,13 @@
 # Code file
-app/code/community/Greyfenix/Animatedcatalog
+app/code/community/Greyfenix/Animatedcatalog                            app/code/community/Greyfenix/Animatedcatalog
 
 # Etc file
-app/etc/modules/Greyfenix_Animatedcatalog.xml
+app/etc/modules/Greyfenix_Animatedcatalog.xml                           app/etc/modules/Greyfenix_Animatedcatalog.xml
 
 # Template and layout files
-app/design/frontend/base/default/layout/greyfenix/animatedcatalog.xml
-app/design/frontend/base/default/template/greyfenix/animatedcatalog
-app/design/frontend/rwd/default/template/greyfenix/animatedcatalog
+app/design/frontend/base/default/layout/greyfenix/animatedcatalog.xml   app/design/frontend/base/default/layout/greyfenix/animatedcatalog.xml
+app/design/frontend/base/default/template/greyfenix/animatedcatalog     app/design/frontend/base/default/template/greyfenix/animatedcatalog
+app/design/frontend/rwd/default/template/greyfenix/animatedcatalog      app/design/frontend/rwd/default/template/greyfenix/animatedcatalog
 
 # Skin files
-skin/frontend/base/default/greyfenix/js/animatedcatalog.js
+skin/frontend/base/default/greyfenix/js/animatedcatalog.js              skin/frontend/base/default/greyfenix/js/animatedcatalog.js

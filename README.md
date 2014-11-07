@@ -1,3 +1,5 @@
+## NOTE THIS MODULE IS CURRENTLY IN DEVELOPMENT AND NOT READY TO USE, IT WILL PROVIDE AS IS
+
 # Greyfenix_Animatedcatalog
 Magento catalog image animation looping based on image sequence
 
