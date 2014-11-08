@@ -25,6 +25,13 @@
  */
 class Greyfenix_Animatedcatalog_Model_Product extends Mage_Catalog_Model_Product
 {
+    /**
+     * Get Animate Image url of the animate image
+     *
+     * @param null $product Product Information
+     *
+     * @return null|string
+     */
     public function getAnimateImage($product = null)
     {
         // product id params expected
@@ -39,9 +46,16 @@ class Greyfenix_Animatedcatalog_Model_Product extends Mage_Catalog_Model_Product
             return $this->getAnimateFile($product);
         }
 
-        return $this;
+        return null;
     }
 
+    /**
+     * Get Animate File on folder structure
+     *
+     * @param $product Product information
+     * 
+     * @return string
+     */
     public function getAnimateFile($product)
     {
         return Mage::getBaseUrl('media') . 'catalog' . DS . 'product' . DS . $product->getAnimateImage();
