@@ -32,18 +32,14 @@ class Greyfenix_Animatedcatalog_Model_Product extends Mage_Catalog_Model_Product
      *
      * @return null|string
      */
-    public function getAnimateImage($product = null)
+    public function getAnimateImage($product)
     {
-        // product id params expected
-        if (is_int($product)) {
-            $item = $this->load($product);
-            if ($item->getAnimateImage()) {
-                return $this->getAnimateFile($item);
-            }
-        }
         // product object expected
-        if (is_object($product) && $product->getAnimateImage()) {
-            return $this->getAnimateFile($product);
+        if (!$product->getAnimateImage()) {
+            $item = Mage::getModel('catalog/product')->load($product->getEntityId());
+        }
+        if ($item->getAnimateImage()) {
+            return $this->getAnimateFile($item->getAnimateImage());
         }
 
         return null;
@@ -56,8 +52,8 @@ class Greyfenix_Animatedcatalog_Model_Product extends Mage_Catalog_Model_Product
      * 
      * @return string
      */
-    public function getAnimateFile($product)
+    public function getAnimateFile($filename)
     {
-        return Mage::getBaseUrl('media') . 'catalog' . DS . 'product' . DS . $product->getAnimateImage();
+        return Mage::getBaseUrl('media') . 'catalog' . DS . 'product' . DS . $filename;
     }
 }

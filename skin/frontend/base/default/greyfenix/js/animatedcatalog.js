@@ -1,7 +1,14 @@
 function _animateCatalog(jQuery) {
     // testing code to test jQuery run fine
-    var checking = jQuery('.product-image img').attr('data-animate');
-    alert(checking);
+    jQuery('.product-image img').each(function() {
+        var animateImage = jQuery(this).attr('data-animate');
+        if (animateImage !== undefined && animateImage !== '') {
+            var id = jQuery(this).attr('id');
+            jQuery(this).replaceWith(
+                '<div id="' + id + '" style="background-image: url(' + animateImage + ')"></div>'
+            );
+        }
+    })
 }
 
 /**
