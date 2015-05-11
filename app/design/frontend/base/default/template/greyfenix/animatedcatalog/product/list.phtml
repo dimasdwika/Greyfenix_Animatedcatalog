@@ -42,7 +42,11 @@ $_helper = $this->helper('catalog/output');
                     <li class="item<?php if( ++$_iterator == sizeof($_productCollection) ): ?> last<?php endif; ?>">
                         <?php // Product Image ?>
                         <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
-                            <img data-animate="<?php echo Mage::getModel('greyfenix_animatedcatalog/product')->getAnimateImage($_product); ?>" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+                            <img data-animate="<?php echo Mage::getModel('greyfenix_animatedcatalog/product')->getAnimateImage($_product); ?>"
+                                 data-animate-width="<?php echo Mage::helper('greyfenix_animatedcatalog')->getWidth(); ?>"
+                                 data-animate-height="<?php echo Mage::helper('greyfenix_animatedcatalog')->getHeight(); ?>"
+                                 src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>"
+                                 alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
                         </a>
                         <?php // Product description ?>
                         <div class="product-shop">
@@ -89,7 +93,11 @@ $_helper = $this->helper('catalog/output');
         <?php endif ?>
             <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
                 <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
-                    <img data-animate="<?php echo Mage::getModel('greyfenix_animatedcatalog/product')->getAnimateImage($_product); ?>" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+                    <img data-animate="<?php echo Mage::getModel('greyfenix_animatedcatalog/product')->getAnimateImage($_product); ?>"
+                         data-animate-width="<?php echo Mage::helper('greyfenix_animatedcatalog')->getWidth(); ?>"
+                         data-animate-height="<?php echo Mage::helper('greyfenix_animatedcatalog')->getHeight(); ?>"
+                         src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>"
+                         alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
                 </a>
                 <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
                 <?php if($_product->getRatingSummary()): ?>

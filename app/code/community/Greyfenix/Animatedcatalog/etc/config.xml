@@ -6,6 +6,11 @@
         </Greyfenix_Animatedcatalog>
     </modules>
     <global>
+        <helpers>
+            <greyfenix_animatedcatalog>
+                <class>Greyfenix_Animatedcatalog_Helper</class>
+            </greyfenix_animatedcatalog>
+        </helpers>
         <models>
             <greyfenix_animatedcatalog>
                 <class>Greyfenix_Animatedcatalog_Model</class>
